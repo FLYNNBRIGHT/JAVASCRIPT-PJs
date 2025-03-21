@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD CHECKER</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <header>
+        <div class="nav">
+        </div>
+    </header> -->
+
+    <main>
+        <section>
+            <h1>Password Checker</h1>
+            <div class="input_field">
+                <label for="pass">Password :</label>
+                <input type="password" class="password_field" id="user_password" name="pass" placeholder="Create Password">
+                <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
+            <div class="outcome hidden" id="outcome_active">
+                <p style="color: #000;">Password should be:</p>
+                <p class="not_match" id="length">At least 8 Characters long</p>
+                <p class="not_match" id="upper">At least 1 Uppercase</p>
+                <p class="not_match" id="special">At least 1 Special Character</p>
+                <p class="not_match" id="number">At least One Number</p>
+                <p class="not_match" id="lower">At least One Lowercase</p>
+            </div>
+            <div class="result">
+                <p class="weak hidden">Weak Password</p>
+                <p class="medium hidden">Medium Password</p>
+                <p class="strong hidden">Strong Password</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script defer src="./index.js"></script>
+</body>
+
+</html>
