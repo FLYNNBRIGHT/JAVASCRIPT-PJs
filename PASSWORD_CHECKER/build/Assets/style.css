@@ -75,3 +75,12 @@ input {
 .match {
     color: #008000;
 }
+
+.result {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
