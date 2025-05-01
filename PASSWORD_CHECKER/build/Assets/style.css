@@ -10,14 +10,6 @@ body {
     display: grid;
 }
 
-.hidden {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
 main {
     /* border: 1px solid #000; */
     border-radius: 2rem;
@@ -59,22 +51,14 @@ input {
     top: 2.5rem;
 }
 
-.outcome {
+/* .outcome {
     margin-top: 1rem;
 }
 
 .outcome p {
     font-size: 1.1rem;
     margin: 5px;
-}
-
-.not_match {
-    color: #ff0000;
-}
-
-.match {
-    color: #008000;
-}
+} */
 
 .result {
     margin-top: 2rem;
