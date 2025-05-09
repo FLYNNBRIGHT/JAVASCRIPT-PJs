@@ -25,6 +25,57 @@ section {
     transform: translateY(-50%);
 }
 
+.hidden {
+    display: none;
+}
+
+.home_screen {
+    padding: 10% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_screen h2 {
+    margin-bottom: 15%;
+}
+
+.home_screen p {
+    margin-bottom: 5%;
+    font-weight: 700;
+}
+
+.home_screen #user_pin {
+    border: #5f5959;
+    border-bottom: #000 solid;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+.home_screen .order_confirm {
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20%;
+}
+
+.home_screen .order_confirm button {
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+.home_screen .order_confirm .clear i {
+    color: #ff0000;
+}
+
+.home_screen .order_confirm .enter i {
+    color: #008000;
+}
+
 .title {
     margin: 2rem 0;
     padding: 0.5rem;

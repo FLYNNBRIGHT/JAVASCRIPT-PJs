@@ -1,3 +1,27 @@
+const user_pin = document.getElementById("user_pin");
+const clear_pin = document.getElementById("clear_pin");
+const submit_pin = document.getElementById("submit_pin");
+
+clear_pin.onclick = () => {
+    user_pin.value = '';
+}
+
+submit_pin.onclick = () => {
+    const login = document.getElementById("login");
+    const account = document.getElementById("account");
+    if (user_pin.value === "1234") {
+        window.alert("Pin Correct, Welcome to My Account");
+
+        login.classList.add('hidden');
+        account.classList.remove('hidden');
+    }
+    else (
+        console.log("Incorrect Password")
+    )
+
+}
+
+
 // Initialization of variables
 let user_input;
 let user_balance = 0;
