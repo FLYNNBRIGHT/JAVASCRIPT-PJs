@@ -28,12 +28,14 @@ let user_balance = 0;
 let output = 0;
 
 // Withdrawal function using simple switch cases
-document.getElementById("withdraw").onclick = function() {
+document.getElementById("withdraw").onclick = function (e) {
+    e.preventDefault()
     user_input = Number(document.getElementById("data").value);
-    switch(true) {
+    switch (true) {
         case user_input > 0 && user_input <= user_balance:
             output = user_balance - user_input;
             window.alert(`Your withdrawal of $${user_input} was successful`);
+            user_input = ' ';
             break;
 
         case user_input > 0 && user_input > user_balance:
@@ -41,7 +43,7 @@ document.getElementById("withdraw").onclick = function() {
             break;
 
         default:
-        window.alert("Invalid Withdrawal Amount");
+            window.alert("Invalid Withdrawal Amount");
     }
 
     user_balance = output;
@@ -55,14 +57,14 @@ document.getElementById('balance').onclick = function () {
 // Deposit Function which allowas user to deposit funds
 document.getElementById('deposit').onclick = function () {
     user_input = Number(document.getElementById("data").value);
-    switch(true) {
+    switch (true) {
         case user_input > 0:
             output = user_balance + user_input;
             window.alert(`Your deposit of $${user_input} was successful`);
             break;
 
         default:
-        window.alert("Invalid Deposit Amount");
+            window.alert("Invalid Deposit Amount");
     }
 
     user_balance = output;
